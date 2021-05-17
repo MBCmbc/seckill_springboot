@@ -2,9 +2,11 @@ package com.miaoshaproject.dao;
 
 import com.miaoshaproject.dataobject.ItemDO;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface ItemDOMapper {
 
     List<ItemDO> listItem();
